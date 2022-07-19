@@ -1,10 +1,5 @@
 module.exports = {
-  // we don't purge css since we use micro-frontends
-  safelist: [
-    {
-      pattern: /./,
-    },
-  ],
+  content: ["./apps/**/*.{html,ts,tsx,jsx}", "!**/node_modules/**"],
   theme: {
     extend: {
       colors: {
